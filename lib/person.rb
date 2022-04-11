@@ -2,7 +2,7 @@ class Person
   attr_accessor :name, :age
   attr_reader :id
 
-  def initialize(name = "Unknown", age, parent_permission: true)
+  def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1..10_000)
     @name = name
     @age = age
@@ -10,18 +10,18 @@ class Person
   end
 
   def can_use_services?
-    is_of_age? || @parent_permission
+    of_age? || @parent_permission
   end
 
   private
 
-  def is_of_age?
+  def of_age?
     @age >= 18
   end
 end
 
-person1 = Person.new("James", 14, parent_permission: false)
-person2 = Person.new("Johnson", 29, parent_permission: true)
+person1 = Person.new(14, 'James', parent_permission: false)
+person2 = Person.new(29, 'Johnson', parent_permission: true)
 
 puts "person1: #{person1.can_use_services?}"
 puts "person2: #{person2.can_use_services?}"
