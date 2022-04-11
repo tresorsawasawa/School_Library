@@ -21,7 +21,7 @@ class Person
 end
 
 person1 = Person.new("James", 14, parent_permission: false)
-person2 = Person.new("Johnson", 19, parent_permission: true)
+person2 = Person.new("Johnson", 29, parent_permission: true)
 
 puts "person1: #{person1.can_use_services?}"
 puts "person2: #{person2.can_use_services?}"
