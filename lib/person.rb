@@ -19,9 +19,3 @@ class Person
     @age >= 18
   end
 end
-
-person1 = Person.new(14, 'James', parent_permission: false)
-person2 = Person.new(29, 'Johnson', parent_permission: true)
-
-puts "person1: #{person1.can_use_services?}"
-puts "person2: #{person2.can_use_services?}"
