@@ -13,11 +13,19 @@
 
 ## Getting Started
 
-To get the content of this project locally you need to run these commands in your terminal.
-Before starting the steps below, be sure you have [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/).
-1. Download the `Zip` or clone it with `git clone https://github.com/tresorsawasawa/OOP_School_Library.git`
-2. `cd OOP_School_Library`
+To get a local copy up and running follow these simple example steps.
 
+### Prerequisites
+
+> You need the following tools be installed in your computer:
+>  - [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+>  - [Ruby](https://github.com/microverseinc/curriculum-ruby/blob/main/simple-ruby/articles/ruby_installation_instructions.md)
+
+### Setup
+
+1. Clone the repo with `git clone https://github.com/tresorsawasawa/OOP_School_Library.git` or Download the `Zip` file.
+2. Access the directory `cd OOP_School_Library`
+3. To run `ruby main.md`
 
 ## Author
   
