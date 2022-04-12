@@ -10,11 +10,3 @@ class Teacher < Person
     true
   end
 end
-
-teacher1 = Teacher.new(35, 'Physics', 'Joseph')
-p teacher1
-p teacher1.can_use_services?
-
-teacher2 = Teacher.new(17, 'Mathematics', 'Joseph', parent_permission: false)
-p teacher2
-p teacher2.can_use_services?
