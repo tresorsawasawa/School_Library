@@ -21,10 +21,6 @@ jenny = Student.new(23, nil, 'Jenny')
 james = Student.new(19, nil, 'James')
 john = Student.new(20, nil, 'John')
 
-# jenny = Student.new(23, classroom1, 'Jenny')
-# james = Student.new(19, classroom1, 'James')
-# john = Student.new(20, classroom1, 'John')
-
 classroom1.add_student(jenny)
 classroom1.add_student(james)
 classroom1.add_student(john)
