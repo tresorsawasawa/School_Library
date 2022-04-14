@@ -27,7 +27,6 @@ To get a local copy up and running follow these simple example steps.
 2. `cd OOP_School_Library` to access the directory 
 3. `ruby main.md` to run
 
-
 ## Author
   
 👤 **Trésor Sawasawa**
