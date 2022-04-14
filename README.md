@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo with `git clone https://github.com/tresorsawasawa/OOP_School_Library.git` or Download the `Zip` file.
 2. `cd OOP_School_Library` to access the directory 
-3. `ruby app.rd` to run
+3. `ruby main.rd` to run
 
 ## Author
   
