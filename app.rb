@@ -17,4 +17,10 @@ class App
   def list_all_books
     @books
   end
+
+  def list_all_persons
+    @persons
+  end
+
+  
 end
