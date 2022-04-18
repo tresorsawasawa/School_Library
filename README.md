@@ -1,4 +1,4 @@
-# OOP School Library
+# School Library
 
 ## Description
 
@@ -23,8 +23,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-1. Clone the repo with `git clone https://github.com/tresorsawasawa/OOP_School_Library.git` or Download the `Zip` file.
-2. `cd OOP_School_Library` to access the directory 
+1. Clone the repo with `git clone https://github.com/tresorsawasawa/School_Library.git` or Download the `Zip` file.
+2. `cd School_Library` to access the directory 
 3. `ruby main.rd` to run
 
 ## Author
@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/tresorsawasawa/OOP_School_Library/issues).
+Feel free to check the [issues page](https://github.com/tresorsawasawa/School_Library/issues).
 
 ## Show your support
 
