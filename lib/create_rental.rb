@@ -24,7 +24,8 @@ class CreateRental
   def create_a_rental(books, persons)
     book_id, person_id, date = inputs(books, persons)
     rental = Rental.new(date, books[book_id], persons[person_id])
-    puts 'Rental created successfully'
+    puts
+    puts 'Rental created successfully!'
     puts
     rental
   end
