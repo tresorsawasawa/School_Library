@@ -27,7 +27,7 @@ class Displayer
         puts "[#{rental.person.name}] Date: \"#{rental.date}\", Book: \"#{rental.book.title}\" by #{rental.book.author}"
       else
         puts
-        puts 'No recorded books where found for the given ID'
+        puts 'No books were found for the given ID'
       end
     end
     puts
