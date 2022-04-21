@@ -20,16 +20,24 @@ class CreatePerson
     print 'Name: '
     name = gets.chomp
     print 'Has parents permission ? [y/n]: '
-    parent_permission = gets.chomp
+    parent_permission = gets.chomp.downcase
     [age, name, parent_permission]
   end
 
   def create_a_student
     age, name, parent_permission = inputs_student
-    student = Student.new(age, nil, name, parent_permission: parent_permission)
-    puts
-    puts 'Student created successfully!'
-    puts
+    case parent_permission
+    when 'n'
+      student = Student.new(age, name, parent_permission: false)
+      puts
+      puts 'Student created successfully!'
+      puts
+    when 'y'
+      student = Student.new(age, name, parent_permission: true)
+      puts
+      puts 'Student created successfully!'
+      puts
+    end
     student
   end
 
