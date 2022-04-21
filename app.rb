@@ -4,6 +4,7 @@ require_relative 'lib/create_persons'
 require_relative 'lib/create_rental'
 require_relative 'lib/create_books'
 require_relative 'lib/classroom'
+require_relative 'lib/load_data'
 require_relative 'lib/displayer'
 require_relative 'lib/teacher'
 require_relative 'lib/student'
@@ -12,10 +13,13 @@ require_relative 'lib/rental'
 require_relative 'lib/book'
 
 class App
+  attr_accessor :books, :persons, :rentals
+
   def initialize
-    @books = []
-    @persons = []
-    @rentals = []
+    initialize_files
+    @books = load_books
+    @persons = load_persons
+    @rentals = load_rentals(@books, @persons)
     @displayer = Displayer.new
   end
 
