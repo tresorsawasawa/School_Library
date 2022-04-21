@@ -1,4 +1,7 @@
-require_relative 'app'
+require 'json'
+require './app'
+require './lib/save_data'
+
 class StartApp
   def initialize
     @app = App.new
@@ -56,6 +59,7 @@ class StartApp
         puts 'Please enter a number between 1 and 7'
       end
     end
+    save_data(@app.books, @app.persons, @app.rentals)
     puts
     puts 'Thank you for using this app!'
     puts
