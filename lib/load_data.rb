@@ -23,9 +23,10 @@ def load_persons
   persons_save = JSON.parse(File.read('./data/persons.json'))
 
   persons_save.each do |person|
-    persons << if person['json_class'] == 'Student'
+    persons << case person['json_class']
+               when 'Student'
                  Student.new(person['age'], person['name'], parent_permission: person['parent_permission'])
-               elsif person['json_class'] == 'Teacher'
+               when 'Teacher'
                  Teacher.new(person['age'], person['specialization'], person['name'])
                end
   end
@@ -37,8 +38,8 @@ def load_rentals(books, persons)
   rentals_save = JSON.parse(File.read('./data/rentals.json'))
   rentals_save.each do |r|
     rentals << Rental.new(r['date'],
-      books.select { |b| b.title == r['title'] } [0],
-      persons.select { |person| person.name == r['name'] } [0])
+                          books.select { |b| b.title == r['title'] } [0],
+                          persons.select { |person| person.name == r['name'] } [0])
   end
   rentals
 end
