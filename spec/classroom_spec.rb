@@ -13,15 +13,15 @@ describe Classroom do
   end
 
   it 'Should return only one student when adding a student' do
-    moses = Student.new(34, 'Moses',  parent_permission: true)
-    jef = Student.new(14, 'Jef',  parent_permission: false)
+    moses = Student.new(34, 'Moses', parent_permission: true)
+    jef = Student.new(14, 'Jef', parent_permission: false)
     @classroom.add_student(moses)
     @classroom.add_student(jef)
     expect(@classroom.students.length).to eql 2
   end
 
   it 'Should return only one student when adding the same student' do
-    trent = Student.new(34, 'Trent',  parent_permission: true)
+    trent = Student.new(34, 'Trent', parent_permission: true)
     @classroom.add_student(trent)
     @classroom.add_student(trent)
     @classroom.add_student(trent)

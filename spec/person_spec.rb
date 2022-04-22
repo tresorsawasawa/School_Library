@@ -39,9 +39,9 @@ describe 'Person' do
 
   it 'Should return the number of the rental when added rental' do
     dan = Person.new(22, 'Ali', parent_permission: true)
-    dan.add_rental('2022-04-18', Book.new('Learn programming', 'test'),)
-    dan.add_rental('2022-04-18', Book.new('Learn programming', 'test'),)
-    dan.add_rental('2022-04-18', Book.new('Learn programming', 'test'),)
+    dan.add_rental('2022-04-18', Book.new('Learn programming', 'test'))
+    dan.add_rental('2022-04-18', Book.new('Learn programming', 'test'))
+    dan.add_rental('2022-04-18', Book.new('Learn programming', 'test'))
     expect(dan.rentals.length).to eql 3
   end
 end

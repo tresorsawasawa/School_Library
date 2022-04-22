@@ -10,7 +10,7 @@ describe TrimmerDecorator do
       capitalized_person = CapitalizeDecorator.new(person)
       expect(capitalized_person.correct_name).to eq 'Maximilianus'
     end
-  
+
     it 'Should return only the 10 characheres of the name' do
       person = Person.new(22, 'maximilianus')
       capitalized_trimmed_person = TrimmerDecorator.new(person)

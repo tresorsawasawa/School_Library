@@ -27,5 +27,4 @@ describe 'Book' do
     rent_book.add_rental('2022-02-16', Person.new(23, 'James'))
     expect(rent_book.rentals.length).to be 3
   end
-
 end
