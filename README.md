@@ -2,7 +2,7 @@
 
 ## Description
 
-> In this project, we will build a tool that helps to record what books are in the library and who borrows them from a fictitious OOP University library. This app will allow you to:
+> In this project, we built a tool that helps to record what books are in the library and who borrows them from a fictitious OOP University library. This app will allow you to:
 > - Add new students or teachers.
 > - Add new books.
 > - Save records of who borrowed a given book and when.
